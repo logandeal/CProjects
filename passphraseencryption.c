@@ -1,4 +1,4 @@
-// Logan Deal ledvk2 CS1050 Lab 10
+// Logan Deal
 
 #include <stdio.h>
 #include <ctype.h>
