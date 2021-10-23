@@ -324,7 +324,7 @@ void empty_line(){
   }
 }
 
-// Runs the commmands
+// Runs the commands
 void userCommand(HashTable* table){
   int args_permitted = 3;
   char input[50];
