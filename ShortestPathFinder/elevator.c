@@ -138,11 +138,7 @@ int dequeue(Queue* q) {
   return item;
 }
 
-// Augment to include previous visited (whenever you enqueue adjacent nodes, make sure to set those adjacent nodes' previous visited to the one being dequeued)
-// Check when BFS has gotten to goal node, if it never does then print out use the stairs and exit(1)
-// After finishing, traverse previous_visited from goal back to start and put in an array to be printed
-
-// Deal or no deal path finding algorithm
+// Custom BFS shortest path algorithm (Similar to Dijkstra's algorithm)
 void bfs_shortest_path(Graph* graph, int start, int goal) {
   // check if empty
   if (!graph->size){
