@@ -41,19 +41,6 @@ int main(void){
   //printGraph(graph);
 
   bfs_shortest_path(graph, start, goal);
-
-  // Rough Notes
-  // Determine all edges based on input with some algorithm?
-
-  // I think I need to initialize all nodes (floors) and then connect them based on start floor and go up up amount of floors and make an edge each time then go down down amount of floors and make more edges for that
-  // Then I will have my completed graph that I can perform DFS on starting from the starting floor!
-
-  // Init graph from input and edges to make a graph
-  // Make a graph from ALL EDGES!!!!! So if u = 2 and d = 1 then all edges will go from s (starting) to 2 floors above that until the floor doesn't exist and there will be edges going down 1 from that all the way back to the starting floor
-  //createGraph()
-
-  // Find minimum number of pushes to get from start to goal, output "use the stairs" if not possible
-  // If possible, output sequence of pushes separated by arrows (Finding an MST -- traversal of MST? -- Prim's algorithm? and then BFS?)
-  // Or actually you probably need DFS to find the fastest (shortest) path to the goal floor
+  
   return 0;
 }
