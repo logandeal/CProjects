@@ -1,11 +1,11 @@
 #include "elevator.h"
 
 int main(void){
-  int floors;
-  int start;
-  int goal;
-  int up;
-  int down;
+  int floors; // f
+  int start; // s
+  int goal; // g
+  int up; // u
+  int down; // d
 
   // User input
   printf("Enter 5 integer values: f s g u d\n");
@@ -36,10 +36,13 @@ int main(void){
     }
   }
 
+  // Create graph
   Graph* graph = createGraph(floors, start, up, down);
 
+  // Print graph
   //printGraph(graph);
 
+  // Main algorithm
   bfs_shortest_path(graph, start, goal);
   
   return 0;
